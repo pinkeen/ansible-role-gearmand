@@ -1,0 +1,15 @@
+dependencies: []
+galaxy_info:
+  author: Filip Sobalski
+  company: creativestyle
+  description: Install gearmand
+  license: MIT
+  min_ansible_version: 1.9
+  galaxy_tags:
+    - gearman
+    - queue
+  platforms:
+    - name: EL
+      versions:
+        - all
+
