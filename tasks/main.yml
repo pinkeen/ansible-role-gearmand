@@ -1,5 +1,12 @@
 - name: Install gearman
   yum: name=gearmand state=present
 
+- name: Install config
+  template:
+    src: gearman.conf
+    dest: /etc/sysconfig/gearmand
+    mode: 0644
+  notify: Restart gearmand
+
 - name: Start and enable gearmand
   service: name=gearmand state=started enabled=yes

@@ -1,0 +1,2 @@
+gearmand_bind_address: 0.0.0.0
+gearmand_port: 4730
